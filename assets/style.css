@@ -45,7 +45,6 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: contrast(0.8);
   background-color: var(--accent);
   
 }
@@ -84,13 +83,19 @@ img {
 .box {
   margin: 1rem auto;
   padding: 1rem;
-  backdrop-filter: contrast(0.8);
   border-radius: 1rem;
   max-width: 800px;
+
 }
 
 .box > i {
   font-size: 2rem !important;
+}
+
+.backdrop {
+  backdrop-filter: contrast(0.8);
+  -webkit-backdrop-filter: contrast(0.8);
+
 }
 
 .flex-row {
@@ -105,7 +110,6 @@ img {
   margin: 0 auto;
   padding: 1rem;
   justify-content: center;
-  backdrop-filter: contrast(0.8);
 }
 
 @media only screen and (max-width: 475px) {
