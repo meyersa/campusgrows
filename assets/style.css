@@ -63,13 +63,14 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: -2rem;
-  width: calc(100% + 2 * 2rem);
+  left: 0;
+  width: 100vw;
   height: 100%;
   background-image: url("/assets/gardening.webp");
   filter: saturate(1.5) opacity(0.75) blur(0.1rem);
   z-index: -10;
   object-fit: cover;
+
 }
 
 .img-box > h2 {
@@ -106,10 +107,11 @@ img {
 }
 
 .footer {
-  width: 100%;
+  width: calc(100% - 2 * 1rem);
   margin: 0 auto;
   padding: 1rem;
   justify-content: center;
+
 }
 
 @media only screen and (max-width: 475px) {
