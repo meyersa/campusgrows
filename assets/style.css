@@ -66,10 +66,10 @@ img {
   left: 0;
   width: 100vw;
   height: 100%;
-  background-image: url("/assets/gardening.webp");
+  background-image: url("/assets/drone-view.jpg");
+  background-size: cover;
   filter: saturate(1.5) opacity(0.75) blur(0.1rem);
   z-index: -10;
-  object-fit: cover;
 
 }
 
@@ -82,10 +82,18 @@ img {
 }
 
 .box {
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: 3rem auto;
   border-radius: 1rem;
   max-width: 800px;
+  overflow: hidden;
+}
+
+.box > div {
+  padding: 1rem; 
+
+}
+.box img {
+  max-width: 50%;
 
 }
 
@@ -98,6 +106,7 @@ img {
   -webkit-backdrop-filter: contrast(0.8);
 
 }
+
 
 .flex-row {
   display: flex;
@@ -114,8 +123,23 @@ img {
 
 }
 
+.footer > p {
+  max-width: 40%;
+  
+}
+
 @media only screen and (max-width: 475px) {
   #fill {
     display: none;
+  }
+
+  .box {
+    flex-direction: column;
+    margin: 3rem 1rem;
+
+  }
+
+  .box img {
+    max-width: 100%;
   }
 }
