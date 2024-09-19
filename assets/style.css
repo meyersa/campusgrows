@@ -4,6 +4,21 @@
 body {
   margin: 0;
   font-family: "Quicksand";
+  position: relative;
+
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("/assets/background.webp");
+  z-index: -20;
+  filter: opacity(0.3);
+  -webkit-filer: opacity(0.3);
+
 }
 
 h1 {
@@ -68,9 +83,10 @@ img {
   height: 100%;
   background-image: url("/assets/drone-view.webp");
   background-size: cover;
-  filter: saturate(1.5) opacity(0.75) blur(0.1rem);
+  filter: blur(0.1rem);
+  -webkit-filter: blur(0.1rem);
   z-index: -10;
-
+  
 }
 
 .img-box > h2 {
@@ -79,6 +95,7 @@ img {
   padding: 1rem;
   font-weight: bolder;
   font-size: 2rem;
+  box-shadow: .5rem .5rem var(--light);
 }
 
 .box {
@@ -86,6 +103,8 @@ img {
   border-radius: 1rem;
   max-width: 800px;
   overflow: hidden;
+  box-shadow: 0 0 0.25rem 0.02rem var(--dark);
+  
 }
 
 .box > div {
@@ -101,10 +120,14 @@ img {
   font-size: 2rem !important;
 }
 
-.backdrop {
-  backdrop-filter: contrast(0.8);
-  -webkit-backdrop-filter: contrast(0.8);
+.box h2 {
+  white-space: nowrap;
 
+}
+
+.backdrop {
+  backdrop-filter: contrast(0.8) blur(0.5rem);
+  -webkit-backdrop-filter: contrast(0.8) blur(0.5rem);
 }
 
 
