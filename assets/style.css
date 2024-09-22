@@ -81,8 +81,9 @@ img {
   left: 0;
   width: 100vw;
   height: 100%;
-  background-image: url("/assets/drone-view.webp");
+  background-image: url("/assets/cover.webp");
   background-size: cover;
+  background-position: center;
   filter: blur(0.1rem);
   -webkit-filter: blur(0.1rem);
   z-index: -10;
