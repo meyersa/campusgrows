@@ -1,82 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CampusGrows.CMU</title>
-    <link rel="stylesheet" href="/assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-  </head>
-  <body>
-    <div class="header backdrop">
-      <div class="left flex-row">
-        <h1>CampusGrows.CMU</h1>
-        <h2 id="fill">//</h2>
-      </div>
-      <div class="right">
-        <div class="button" onclick='redirect("https://www.instagram.com/campusgrows.cmu/")'>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CampusGrows.CMU</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+</head>
+
+<body>
+  <div class="header backdrop">
+    <div class="left flex-row">
+      <h1>CampusGrows.CMU</h1>
+      <h2 id="fill">//</h2>
+    </div>
+    <div class="right">
+      <div class="button" onclick='redirect("https://www.instagram.com/campusgrows.cmu/")'>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </div>
-    <div class="content">
-      <div class="img-box">
-        <h2>The Central Michigan University gardening RSO!</h2>
-      </div>
-      <div class="box backdrop flex-row">
-        <div>
-          <div class="flex-row">
-            <h2>What we do</h2>
-            <i class="fa-solid fa-seedling"></i>
-          </div>
-          <p>
-            We started a growing area on campus, by the baseball fields, to allow students and residents to grow food
-            despite not having the resources
-          </p>
-        </div>
-        <img src="/assets/produce.webp" />
-      </div>
-      <div class="box backdrop flex-row">
-        <div>
-          <div class="flex-row">
-            <h2>Who we are</h2>
-            <i class="fa-solid fa-helmet-safety"></i>
-          </div>
-          <p>
-            CampusGrows is a group that supports planting on campus and empowering students to be able to learn how to
-            grow their own food
-          </p>
-        </div>
-        <img src="/assets/gardening.webp" />
-      </div>
-      <div class="box backdrop flex-row">
-        <div>
-
+  </div>
+  <div class="content">
+    <div class="img-box">
+      <h2>The Central Michigan University gardening RSO!</h2>
+    </div>
+    <div class="box backdrop flex-row">
+      <div>
         <div class="flex-row">
-          <h2>How you can get involved!</h2>
+          <h2>What we do</h2>
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <p>
+          We hold events around gardening and improving the campus garden, while spreading education about how to garden
+          and the benefits of growing your own food.
+        </p>
+      </div>
+      <img src="/assets/produce.webp" />
+    </div>
+    <div class="box backdrop flex-row">
+      <div>
+        <div class="flex-row">
+          <h2>Who we are</h2>
+          <i class="fa-solid fa-helmet-safety"></i>
+        </div>
+        <p>
+          CampusGrows is a group that supports planting on campus and empowering students to be able to learn how to
+          grow their own food
+        </p>
+      </div>
+      <img src="/assets/gardening.webp" />
+    </div>
+    <div class="box backdrop flex-row">
+      <div>
+        <div class="flex-row">
+          <h2>Giving back</h2>
           <i class="fa-solid fa-clipboard-check"></i>
         </div>
         <p>
-          Simply show up at one of our information events and you can start planting in the garden too, anyone can do
-          it!
+          We have a community garden section where people are invited to donate their time to help grow food for the community to be donated to the CMU Student Food Pantry
+        </p>
+      </div>
+      <img src="/assets/scarecrow.webp" />
+    </div>
+  </div>
+    <div class="box backdrop flex-row">
+      <div>
+        <div class="flex-row">
+          <h2>Get involved!</h2>
+          <i class="fa-solid fa-handshake-angle"></i>        
+        </div>
+        <p>
+          Our garden is located just west of lot 70 off of West Campus Drive by the baseball stadium. We rent 10ft by 10ft plots to any individual who is interested for $10, or you can contribute to the community garden any time!
         </p>
       </div>
       <img src="/assets/contrib.webp" />
-      </div>
     </div>
-    <div class="footer flex-row backdrop">
-      <p>Copyright 2024</p>
-      <p>|</p>
-      <p>Check out CampusGrows.CMU on <a href="https://www.instagram.com/campusgrows.cmu/">Instagram</a></p>
-      <p>|</p>
-      <p><a href="https://github.com/meyersa/campusgrows">Github</a></p>
-    </div>
-  </body>
-  <script>
-    function redirect(url) {
-      window.location.href = url;
-    }
-  </script>
+  </div>
+  <div class="footer flex-row backdrop">
+    <p>Copyright 2024</p>
+    <p>|</p>
+    <p>Check out CampusGrows.CMU on <a href="https://www.instagram.com/campusgrows.cmu/">Instagram</a></p>
+    <p>|</p>
+    <p><a href="https://github.com/meyersa/campusgrows">Github</a></p>
+  </div>
+</body>
+<script>
+  function redirect(url) {
+    window.location.href = url;
+  }
+</script>
+
 </html>
